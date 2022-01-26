@@ -1,2 +1,2 @@
 # ResumeAssignment
-building a resume using HTML and CSS.
+Building a resume using HTML and CSS.
