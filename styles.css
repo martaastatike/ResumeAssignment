@@ -1,11 +1,23 @@
 /* Global Styles*/
 
+  
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
 body {
   color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+  line-height: 1.5;
 }
 
 img {
-   width: 300px;
+   width: 400px;
 }
 a {
   color: #FFE66D;
@@ -13,14 +25,51 @@ a {
 a:hover {
   text-decoration: none;
 }
+h2{
+  font-size: 45px;
+}
+h1{
+  font-size: 100px;
+  line-height: 1;
+}
+h1,h2{
+  font-family: 'Caveat', cursive;
+  font-weight: 400;
+  margin:0;
+  text-align:center;
 
+}
+
+.content-wrap {
+  width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+
+/* Profile*/ 
 
 header {
   background: #2F3061;
   color: #F7FFF7;
+  
+
+}
+
+header h1{
+  text-shadow: 5px 5px 5px rgb(235, 221, 221);
+  animation-name: example;
+  animation-duration: 4s;
+ 
+}
+@keyframes example {
+  0%   {color:red; }
+  25%  {color:yellow;}
+  
 }
 
 /* projects*/
+
 
 .projects {
   background: #F7FFF7;
@@ -35,9 +84,26 @@ header {
   text-decoration: none;
   padding: 8px;
   border-radius:4px;
+  display: inline-block;
 }
 .projects .btn:hover {
   background: rgba(47, 48, 97, 80%);
+}
+
+
+.project-item{
+  overflow: hidden;
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+
+}
+.project-item img{
+  float:left;
+  margin-right: 20px;
+}
+
+.project-item h3{
+  margin-top: 0;
 }
 
 /*Work Experience*/
