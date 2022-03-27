@@ -17,7 +17,7 @@ body{
   }
 
 
-img{
+ #portfolio img{
   
     width: 100%;
     
@@ -198,9 +198,7 @@ footer{
     grid-column: 1/span2;
     margin-bottom: 20px;
 }
-header img{
-  width:300px;
-}
+
     
   
   h1{
@@ -219,9 +217,7 @@ header img{
 }
   
   @media screen and (min-width:901px){
-    header img{
-      width:600px;
-    }
+    
     .portfolio, .work{
       display: grid;
       grid-template-columns: auto auto;
@@ -256,3 +252,8 @@ h2{
   justify-content: center;
 }
   }
+@media screen and (max-width:400px){
+    header img{
+      width: 100%;
+    }
+      }
